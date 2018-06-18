@@ -1,0 +1,11 @@
+{{#unless isNoLabel}}
+<label class="" style="display:inline-block">{{fieldLabel}}</label>
+{{/unless}}
+
+<div class="gx-radio-list {{if isInline "boa-radio-list--inline"}} {{radioListClassNames}}">
+  {{#each options as |item index|}}
+  {{radio-field label=item.label value=item.value isReadOnly=fieldIsReadOnly isDisabledItem=item.isDisabled isInline=isInline isRequired=fieldIsRequired fieldValue=fieldValue fieldName=fieldName fieldId=fieldId autofocus=autofocus}}
+  {{/each}}
+  {{yield}}
+</div>
+<span id="{{fieldErrorId}}" class="boa-field-alert boa-field-alert--danger {{unless hasFieldErrorMessage "boa-u-hidden"}} {{if isInline "boa-field-alert--inline"}}">{{fieldErrorMessage}}</span>

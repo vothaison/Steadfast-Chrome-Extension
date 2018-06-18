@@ -1,0 +1,1 @@
+Object reference not set to an instance of an object.    at VTS.ChromeNativeMessaging.Program.Main(String[] args) in C:\Users\S.VoT\Documents\Visual Studio 2013\Projects\Assembla\Chrome Extensions\NativeApplication\VTS.ChromeNativeMessaging\VTS.ChromeNativeMessaging\Program.cs:line 38

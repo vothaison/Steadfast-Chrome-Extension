@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html data-ember-extension="1">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Gemini Extensions</title>
+  <link href="css/index.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+      font-size: 100%;
+      max-width: 400px;
+      width: 300px;
+    }
+
+    .vts-colection {
+      margin: 0;
+      text-align: left;
+    }
+
+    .vts-collection a.collection-item {
+      text-align: left;
+    }
+
+    .collection a.collection-item {
+      text-align: left;
+      padding-bottom: 10px;
+      padding-top: 8px;
+      padding-left: 10px;
+    }
+  </style>
+
+
+</head>
+<body>
+  <ul class="ection collectionvts-col">
+    <!--<li class="k-item"><a href="#!" id="button-locate-source-file">Locate Source File</a></li>-->
+    <li class="k-item"><a href="#!" id="button-open-utilities-page">Utilities</a></li>
+    <li class="k-item"><a href="#!" id="button-open-options-page">Options</a></li>
+    <li class="k-item"><a href="#!" class="k-item" id="button-about">About</a></li>
+  </ul>
+
+  <script src="../lib/jquery/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+
+</body>
+</html>

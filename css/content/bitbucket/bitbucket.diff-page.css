@@ -1,0 +1,42 @@
+.sfx_action-open-in-visual-studio{
+  background: #68217a !important;
+  font-weight: bold;
+    color: white !important;
+
+}
+
+.sfx_btn-open-git-log,
+.sfx_btn-open-in-vs {
+  background: #68217a;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 2px 3px;
+  cursor: pointer;
+  line-height: 1em;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  width: 18px;
+  height: 17px;
+  margin-left: 5px;
+}
+
+.sfx_action-open-git-log,
+.sfx_btn-open-git-log{
+  background: #a41437;
+}
+
+.sfx_btn-open-git-log,
+.sfx_btn-open-in-vs {
+  display: none;
+}
+
+  .sfx_btn-open-in-vs:hover {
+    background: purple;
+  }
+
+.iterable-item.file:hover .sfx_btn-open-git-log,
+.iterable-item.file:hover .sfx_btn-open-in-vs {
+  display: inline-block;
+}

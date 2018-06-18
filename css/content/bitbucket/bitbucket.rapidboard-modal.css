@@ -1,0 +1,10 @@
+
+.sfx_btn-copy-git-branch-name {
+  cursor: pointer;
+}
+
+.sfx_btn-copy-git-branch-name__icon {
+  font-size: 13px;
+  font-size: 15px;
+  line-height: 1.6;
+}

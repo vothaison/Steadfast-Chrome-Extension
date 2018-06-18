@@ -1,0 +1,37 @@
+<div class="card">
+  <div class="card-header">
+    Lorem Generator
+  </div>
+  <div class="card-block">
+    <p class="card-text"><i>Select number of characters and click Generate</i></p>
+
+
+    <div class="card card-inverse" style="background-color: #333; border-color: #333;">
+      <div class="card-block my-slider-container">
+        <input id="slider-input" data-slider-id='ex1Slider' type="text" data-slider-min="1" data-slider-max="500" data-slider-step="1" data-slider-value="10"
+               />
+      </div>
+    </div>
+    <span><b>{{characterCount}}</b> Characters</span>
+
+    <br />
+    <br />
+
+    
+    <a href="#" class="btn btn-primary" {{action "regenerateText"}}>Regenerate & Copy</a>
+  </div>
+
+  
+</div>
+
+<br />
+<div class="card">
+  <div class="card-header">
+    <h4 class="card-title" style="display: inline-block">Generated Text </h4>
+    <button style="cursor: pointer; margin-top: -10px;" data-button="button-copy" data-clipboard-text={{generatedText}} class="btn btn-outline-info btn-sm" >Copy</button>
+    <span class="badge badge-info" data-badge="badge" style="display: none; margin-top: -10px;">Copied</span>
+  </div>
+  <div class="card-block">
+    <p class="card-text" id="generatedText">{{generatedText}}</p>
+  </div>
+</div>

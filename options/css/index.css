@@ -1,0 +1,116 @@
+.gx-blue {
+  background-color: #356aa0;
+}
+
+.gray {
+  background-color: gray;
+}
+
+body {
+  font-size: 15px !important;
+  background: #eef;
+}
+
+.mce-content-body {
+  color: black !important;
+}
+
+.container.level-one-app {
+  position: relative;
+}
+
+.gx-editor-container {
+  position: absolute;
+  width: 142%;
+  left: -20%;
+}
+
+.gx-float-right {
+  position: fixed;
+  right: calc(50% - 400px);
+  bottom: 0;
+}
+
+.gx-menu-top {
+}
+
+.gx-h2 {
+  -webkit-margin-after: 0;
+}
+
+.gx-label {
+  margin-bottom: .5em;
+  margin-top: 1em;
+  line-height: 1em;
+  font-weight: bold;
+  display: block;
+  font-size: 14px;
+}
+
+.gx-sub-section-title {
+  -webkit-margin-after: 0;
+}
+
+.gx-single-option-title {
+  display: inline-block;
+}
+
+  .gx-single-option-title h4 {
+    display: inline-block;
+    -webkit-margin-after: 0;
+    font-weight: normal;
+  }
+
+  .gx-single-option-title span {
+    font-size: 8pt;
+    font-style: italic;
+    color: #666;
+    display: inline-block;
+    margin-left: 5px;
+  }
+
+    .gx-single-option-title span.custom-control-description {
+      font-size: 10pt;
+    }
+
+
+  .gx-single-option-title a {
+    font-size: 9px;
+    font-style: italic;
+    display: inline-block;
+    margin-left: 5px;
+  }
+
+.gx-checkbox-label {
+  top: 0;
+}
+
+.gx-sub-section {
+  margin-left: 23px;
+}
+
+.gx-display-hidden {
+  display: none;
+}
+
+.gx-radio-list {
+  -webkit-margin-before: .5em;
+}
+
+.gx-sub-section__item {
+  margin-top: 10px;
+}
+
+.gx-small-description {
+  -webkit-margin-before: 0;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.gx-top-most-title {
+  -webkit-margin-after: 0;
+}
+
+.list-group-item label {
+  margin-bottom: 0;
+}

@@ -1,0 +1,11 @@
+﻿.gx-project-info {
+  position: relative;
+}
+
+.gx-progress-info {
+  min-width: 400px;
+}
+
+.mce-container-body:first-child {
+  height: 100% !important;
+}

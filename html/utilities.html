@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <script src="../lib/jquery/jquery.min.js"></script>
+  <title>Utilities</title>
+
+  <link rel="stylesheet" href="../lib/tether/css/tether.min.css">
+  <link rel="stylesheet" href="../lib/tether/css/tether-theme-basic.min.css">
+
+  <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../lib/slider/bootstrap-slider.min.css">
+  <link rel="stylesheet" href="../css/utilities-ember.css">
+
+  <script src="../lib/ember/ember-template-compiler.js"></script>
+  <script src="../lib/tether/js/tether.min.js"></script>
+  <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../lib/clipboard/clipboard.min.js"></script>
+  <script src="../lib/slider/bootstrap-slider.min.js"></script>
+  <script src="../lib/ember/ember.js"></script>
+</head>
+
+<body class="" id="ember-root">
+
+
+  <script type="text/x-handlebars" id="components/radio-field">
+
+    {{radio-button class=radioInputClassNames disabled=isDisabled value=value checked=fieldValue name=fieldName autofocus=autofocus}}
+    <label for={{fieldName}} class="{{radioLabelClassNames}}">{{label}}</label>
+
+  </script>
+
+
+  <script type="text/x-handlebars" id="components/radio-field-group">
+    {{#unless isNoLabel}}
+    <label class="" style="display:inline-block">{{fieldLabel}}</label>
+    {{/unless}}
+
+    <div class="gx-radio-list {{if isInline "boa-radio-list--inline"}} {{radioListClassNames}}">
+      {{#each options as |item index|}}
+      {{radio-field label=item.label value=item.value isReadOnly=fieldIsReadOnly isDisabledItem=item.isDisabled isInline=isInline isRequired=fieldIsRequired fieldValue=fieldValue fieldName=fieldName fieldId=fieldId autofocus=autofocus}}
+      {{/each}}
+      {{yield}}
+    </div>
+    <span id="{{fieldErrorId}}" class="boa-field-alert boa-field-alert--danger {{unless hasFieldErrorMessage "boa-u-hidden"}} {{if isInline "boa-field-alert--inline"}}">{{fieldErrorMessage}}</span>
+  </script>
+
+
+  <script type="text/html" template-name="advanced">
+    <div template-name="advanced">
+      <h1>Advanced</h1>
+      {{outlet}}
+    </div>
+  </script>
+
+
+  <script type="text/x-template" template-name="about">
+    <h1>About</h1>
+    <div class="row right">
+      <button {{action "save"}} class="k-button">Save</button>
+    </div>
+    <div class="row gx-editor-container">
+      <textarea></textarea>
+    </div>
+
+    {{outlet}}
+  </script>
+
+  <script src="../js/em/utilities/app.js"></script>
+  <script src="../js/em/utilities/lorem.js"></script>
+  <script src="../js/em/utilities/utils.js"></script>
+  <script src="../js/em/utilities/template-collector.js"></script>
+  <script src="../js/em/utilities/routes.js"></script>
+  <script src="../js/em/utilities/utilities-ember.js"></script>
+  <script src="../js/em/utilities/is-active-helper.js"></script>
+  <script src="../js/em/utilities/components/base-field-group-component.js"></script>
+  <script src="../js/em/utilities/components/radio-field-component.js"></script>
+  <script src="../js/em/utilities/components/base-controller.js"></script>
+
+  <script src="../js/em/utilities/routes/index-route.js"></script>
+  <script src="../js/em/utilities/routes/general-route.js"></script>
+  <script src="../js/em/utilities/routes/lorem-generator-route.js"></script>
+
+  <script src="../js/em/utilities/controllers/general-controller.js"></script>
+  <script src="../js/em/utilities/controllers/lorem-generator-controller.js"></script>
+  <script src="../js/em/utilities/controllers/advance-controller.js"></script>
+  <script src="../js/em/utilities/controllers/about.js"></script>
+
+
+</body>
+</html>

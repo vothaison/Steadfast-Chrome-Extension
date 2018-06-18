@@ -1,0 +1,116 @@
+﻿.left-zone a:visited {
+  color: #555;
+}
+
+.left-zone .title{
+	    margin-bottom: 5px;
+}
+
+.right-zone .section-content img {
+  box-shadow: 0px 0px 1px 1px lightgray;
+}
+
+div.mce-fullscreen {
+  left: 50px !important;
+  top: 40px !important;
+  height: calc(100% - 70px) !important;
+  width: calc(100% - 50px) !important;
+}
+
+.gx-full-screen-group {
+  display: inline-block;
+  float: right;
+  margin-right: 5px;
+  margin-top: 1px;
+}
+
+.gx-attribute-item {
+  padding-left: 25px !important;
+}
+
+.gx-card {
+  height: 30px;
+}
+
+  .gx-card div {
+    line-height: 2.5em !important;
+    backface-visibility: inherit !important;
+    transform: none !important;
+  }
+
+  .gx-card .gx-yes,
+  .gx-card .gx-no {
+    float: left;
+    display: block;
+    width: calc(50% - 5px);
+    background-color: green;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .gx-card .gx-yes {
+    background-color: green;
+    margin-right: 5px;
+  }
+
+  .gx-card .gx-no {
+    background-color: lightgray;
+    margin-left: 5px;
+  }
+
+  .gx-card .back a {
+    backface-visibility: inherit !important;
+  }
+
+#view-item .attributes-pane .attribute-header .title {
+  padding-left: 7px !important;
+}
+
+.gx-github-open-pr, .gx-github-open-pr a span {
+  color: darkgreen;
+}
+
+.gx-github-closed-pr, .gx-github-closed-pr a span {
+  color: #6e5494;
+}
+
+#view-item .attributes-pane .attribute-value {
+  padding-left: 5px !important;
+}
+
+.gx-github-open-pr a,
+.gx-github-closed-pr a {
+  display: block;
+  margin-left: 20px;
+}
+
+.gx-github-open-pr,
+.gx-github-closed-pr {
+  font-weight: bolder;
+}
+
+#comments-content {
+  margin-bottom: 30px !important;
+  padding-bottom: 30px !important;
+}
+
+body {
+  opacity: 1 !important;
+}
+
+.gx-testrail-link {
+      position: absolute;
+    top: 50%;
+    background: red;
+    z-index: 100;
+    display: block;
+}
+
+.gx-testrail-link:hover {
+  background: green;
+}
+
+.gx-testrail-link:active {
+  background: blue;
+}

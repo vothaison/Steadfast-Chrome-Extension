@@ -1,0 +1,46 @@
+﻿.gx-git-info {
+  display: flex;
+}
+
+  .gx-git-info .gx-git-info_git-icon {
+    width: 34px;
+    height: 35px;
+    display: inline-block;
+    border: 1px solid;
+    border-right: none;
+    background-color: lightgreen;
+  }
+
+  .gx-git-info .gx-git-info_status {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid green;
+    display: block;
+    background-color: green;
+    height: 15px;
+  }
+
+  .gx-git-info .gx-git-info_command-button {
+    border: 1px solid;
+    padding: 10px 15px;
+    text-decoration: none;
+    cursor: pointer;
+    min-width: 90px;
+    display: flex;
+    align-items: center;
+    height: 15px;
+  }
+
+  .gx-git-info .gx-git-info_loading-image {
+    width: 32px;
+    height: 32px;
+    border: none;
+    display: inline-block;
+  }
+
+.gx-git-info_outer {
+  align-items: flex-start;
+  display: flex;
+}
+

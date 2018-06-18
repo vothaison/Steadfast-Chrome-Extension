@@ -1,0 +1,208 @@
+{
+    "manifest_version": 2,
+    "name": "Steadfast Chrome Extension",
+    "description": "",
+    "version": "2.0.0",
+    "background": {
+        "persistent": false,
+        "scripts": [
+            "lib/moment/moment.js",
+            "lib/jquery/jquery.min.js",
+            "js/common/common.polifills.js",
+            "js/common/common.master.js",
+            "js/common/common.background.js",
+            "js/background/background.common.js",
+            "js/background/background.gemini.js",
+            "js/background/background.atlassian.js",
+            "js/background/background.bitbucket.js",
+            "js/background/background.svu.js",
+            "js/background/background.boa.js",
+            "js/background/background.options-page.js",
+            "js/background/background.utilities-page.js"
+
+        ]
+    },
+
+    "options_page": "options/index.html",
+
+    "content_scripts": [
+        {
+            "run_at": "document_end",
+            "matches": [
+                "https://intranet.steadfasthub.com/*",
+                "https://*.atlassian.net/*",
+                "https://steadfasttech.atlassian.net/*",
+                "https://bitbucket.org/*",
+                "http://*/*/Forms/Main.ashx*",
+                "http://*/Boa/*",
+                "http://*/boa*",
+                "http://explosm.net/*"
+            ],
+            "js": [
+                "lib/jquery/jquery.min.js",
+                "js/common/common.polifills.js",
+                "js/common/common.master.js",
+                "js/common/common.browser-adapter.js",
+                "js/common/common.content.js"
+            ],
+            "css": []
+        },
+
+        {
+            "run_at": "document_start",
+            "matches": [ "https://intranet.steadfasthub.com/*" ],
+            "js": [
+            ],
+            "css": [
+                "css/content/gemini/gemini.hide.css"
+            ]
+        },
+
+        {
+            "run_at": "document_end",
+            "matches": [ "https://intranet.steadfasthub.com/*" ],
+            "js": [
+                "lib/clipboard/clipboard.min.js",
+                "lib/moment/moment.js",
+                "lib/jquery.mousewheel/jquery.mousewheel.js",
+                "js/content/gemini/gemini.selector-provider.js",
+                "js/content/gemini/gemini.branch-name-formula.js",
+                "js/content/gemini/gemini.common.js",
+
+                "js/content/gemini/gemini.copy-buttons.js",
+
+                "js/content/gemini/gemini.tiny-mce-override.js",
+                "js/content/gemini/gemini.set-due-date.js",
+                "js/content/gemini/gemini.gemini-appearance.js",
+                "js/content/gemini/gemini.git-native.js",
+                "js/content/gemini/gemini.asignee-list.js",
+                "js/content/gemini/gemini.leftzone-slider.js",
+                "js/content/gemini/gemini.dashboard.js"
+            ],
+            "css": [
+                "css/content/gemini/gemini.common.css",
+                "css/content/gemini/gemini.override.css",
+                "css/content/gemini/gemini.fonts.css",
+                "css/content/gemini/gemini.copy-buttons.css",
+                "css/content/gemini/gemini.appearances.css",
+                "css/content/gemini/gemini.git-info.css"
+            ]
+        },
+
+        {
+            "matches": [
+                "https://*.atlassian.net/*",
+                "https://steadfasttech.atlassian.net/*"
+            ],
+            "js": [
+                "lib/clipboard/clipboard.min.js",
+                "lib/moment/moment.js",
+                "js/content/atlassian/atlassian.base.js",
+                "js/content/atlassian/atlassian.branch-name-formula.js",
+                "js/content/atlassian/atlassian.url-observer.js",
+                "js/content/atlassian/atlassian.single-view.js",
+                "js/content/atlassian/atlassian.browse.js",
+                "js/content/atlassian/atlassian.rapidboard.js",
+                "js/content/atlassian/atlassian.rapidboard-modal.js",
+                "js/content/atlassian/atlassian.issues.js"
+
+            ],
+            "css": [
+                "css/content/atlassian/atlassian.content.main.css"
+            ]
+        },
+
+        {
+            "matches": [
+                "https://bitbucket.org/*"
+            ],
+            "js": [
+                "lib/clipboard/clipboard.min.js",
+                "lib/moment/moment.js",
+                "js/content/bitbucket/bitbucket.base.js",
+                "js/content/bitbucket/bitbucket.diff-pages.js",
+                "js/content/bitbucket/bitbucket.url-observer.js"
+
+            ],
+            "css": [
+                "css/content/atlassian/atlassian.content.main.css"
+            ]
+        },
+
+        {
+            "run_at": "document_end",
+            "matches": [
+                "http://*/*/Forms/Main.ashx*"
+            ],
+            "js": [
+                "lib/jquery.mousewheel/jquery.mousewheel.js",
+                "lib/typeahead/typeahead-0.11.1.min.js",
+                "js/content/svu/svu.base.js",
+                "js/content/svu/svu.url-observer.js",
+                "js/content/svu/svu.controller-observer.js"
+
+            ],
+            "css": [
+            ]
+        },
+
+        {
+            "run_at": "document_end",
+            "matches": [
+                "http://*/Boa/*",
+                "https://*/Boa/*",
+                "http://*/boa*",
+                "https://*/boa*"
+            ],
+            "js": [
+                "lib/jquery.mousewheel/jquery.mousewheel.js",
+                "lib/jquery-ui/jquery-ui.js",
+                "lib/animejs/anime.js",
+                "lib/typeahead/typeahead-0.11.1.min.js",
+                "js/content/boa/boa.base.js",
+                "js/content/boa/boa.url-observer.js",
+                "js/content/boa/boa.all-page.js",
+                "js/content/boa/boa.home-page.js"
+            ],
+            "css": [
+            ]
+        },
+
+        {
+            "run_at": "document_end",
+            "matches": [
+                "http://explosm.net/*"
+            ],
+            "js": [
+                "js/content/explosm/explosm.base.js",
+                "js/content/explosm/explosm.all-page.js",
+                "js/content/explosm/explosm.url-observer.js"
+
+            ],
+            "css": [
+            ]
+        }
+    ],
+    "browser_action": {
+        "default_icon": "images/logo.png",
+        "default_popup": "popup/index.html",
+        "default_title": "Steadfast Chrome Extension"
+    },
+    "icons": {
+        "16": "images/logo.png",
+        "48": "images/logo.png",
+        "128": "images/logo.png"
+    },
+    "permissions": [
+        "<all_urls>",
+        "webNavigation",
+        "history",
+        "activeTab",
+        "storage",
+        "tabs",
+        "https://intranet.steadfasthub.com/*",
+        "nativeMessaging"
+    ],
+    "web_accessible_resources": [ "css/*", "images/*", "lib/*", "fonts/*", "js/content/svu/*", "js/content/boa/*", "js/content/util/*" ],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}

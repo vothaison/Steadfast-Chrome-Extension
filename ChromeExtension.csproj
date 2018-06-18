@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C243AF24-B6EB-4137-BC7E-27E4D10C0142}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VTS.GeminiGithubTestrailExtension</RootNamespace>
+    <AssemblyName>VTS.GeminiGithubTestrailExtension</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <BaseIntermediateOutputPath>..\..\..\Temp\bin\obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\Temp\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <BaseIntermediateOutputPath>..\..\..\Temp\bin\obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="css\content\atlassian\atlassian.content.main.css" />
+    <Content Include="css\content\bitbucket\bitbucket.rapidboard-modal.css" />
+    <Content Include="css\content\boa\in-page-menu.css" />
+    <Content Include="css\content\boa\boa.css" />
+    <Content Include="css\content\bitbucket\bitbucket.diff-page.css" />
+    <Content Include="css\content\svu\svu.css" />
+    <Content Include="css\content\gemini\gemini.assignee-list.css" />
+    <Content Include="css\content\gemini\gemini.hide.css" />
+    <Content Include="css\content\gemini\gemini.leftzone-slider.css" />
+    <Content Include="css\content\gemini\gemini.github-pr.css" />
+    <Content Include="css\content\gemini\gemini.override.css" />
+    <Content Include="css\content\gemini\gemini.copy-buttons.css" />
+    <Content Include="css\content\gemini\gemini.git-info.css" />
+    <Content Include="css\content\gemini\gemini.fonts.css" />
+    <Content Include="css\content\gemini\gemini.appearances.css" />
+    <Content Include="css\content\gemini\gemini.common.css" />
+    <Content Include="css\utilities-ember.css" />
+    <Content Include="js\content\atlassian\atlassian.rapidboard-modal.js" />
+    <Content Include="options\js\index.js" />
+    <Content Include="popup\css\index.css" />
+    <Content Include="css\options-tinymce.css" />
+    <Content Include="options\css\index.css" />
+    <Content Include="images\gemini-logo.jpg" />
+    <Content Include="images\genini-favicon.ico" />
+    <Content Include="images\loading3.gif" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\utilities.ico" />
+    <Content Include="js\background\background.bitbucket.js" />
+    <Content Include="js\background\background.boa.js" />
+    <Content Include="js\common\common.browser-adapter.js" />
+    <Content Include="js\content\bitbucket\bitbucket.url-observer.js" />
+    <Content Include="js\content\bitbucket\bitbucket.base.js" />
+    <Content Include="js\content\bitbucket\bitbucket.diff-pages.js" />
+    <Content Include="js\content\atlassian\atlassian.rapidboard.js" />
+    <Content Include="js\content\atlassian\atlassian.browse.js" />
+    <Content Include="js\content\boa\boa.home-page.js" />
+    <Content Include="js\content\boa\boa.all-page.js" />
+    <Content Include="js\content\boa\boa.base.js" />
+    <Content Include="js\content\boa\boa.controller-observer.js" />
+    <Content Include="js\content\boa\boa.url-observer.js" />
+    <Content Include="js\content\explosm\explosm.url-observer.js" />
+    <Content Include="js\content\explosm\explosm.all-page.js" />
+    <Content Include="js\content\explosm\explosm.base.js" />
+    <Content Include="js\content\svu\svu.controller-observer.in-page.js" />
+    <Content Include="js\content\util\controller-observer.in-page.js" />
+    <Content Include="options\js\em\options\components\bootstrap-dropdown-list-component.js" />
+    <Content Include="lib\fontawesome\css\font-awesome.min.css" />
+    <Content Include="lib\typeahead\typeahead-0.11.1.min.js" />
+    <Content Include="html\utilities.html" />
+    <Content Include="options\index.html" />
+    <Content Include="popup\index.html" />
+    <Content Include="images\icon.png" />
+    <Content Include="images\option-page\buttonGoToGemini.jpg" />
+    <Content Include="images\option-page\buttonOpenInVisualStudio.jpg" />
+    <Content Include="images\option-page\buttonTogglePlusMinus.jpg" />
+    <Content Include="images\option-page\changeMceEditor.jpg" />
+    <Content Include="images\option-page\copyGitBranchName.png" />
+    <Content Include="images\option-page\copyTextFromTitle.jpg" />
+    <Content Include="images\option-page\enhanceNewPr.jpg" />
+    <Content Include="images\option-page\preSelectUpstreamBranch.jpg" />
+    <Content Include="images\option-page\setDueDateBySprint.jpg" />
+    <Content Include="images\option-page\showGitFastToolbar.jpg" />
+    <Content Include="images\option-page\showGithubPRStatus.jpg" />
+    <Content Include="images\option-page\showQuickAssign.jpg" />
+    <Content Include="js\background\background.svu.js" />
+    <Content Include="js\background\background.options-page.js" />
+    <Content Include="js\background\background.utilities-page.js" />
+    <Content Include="js\background\background.atlassian.js" />
+    <Content Include="js\background\background.github.js" />
+    <Content Include="js\background\background.gemini.js" />
+    <Content Include="js\background\background.common.js" />
+    <Content Include="js\common\common.background.js" />
+    <Content Include="js\common\common.content.js" />
+    <Content Include="js\common\common.polifills.js" />
+    <Content Include="js\common\common.master.js" />
+    <Content Include="js\content\atlassian\atlassian.base.js" />
+    <Content Include="js\content\atlassian\atlassian.issues.js" />
+    <Content Include="js\content\atlassian\atlassian.single-view.js" />
+    <Content Include="js\content\atlassian\atlassian.url-observer.js" />
+    <Content Include="js\content\atlassian\atlassian.branch-name-formula.js" />
+    <Content Include="js\content\gemini\gemini.dashboard.js" />
+    <Content Include="js\content\gemini\gemini.leftzone-slider.js" />
+    <Content Include="js\content\gemini\gemini.selector-provider.js" />
+    <Content Include="js\content\gemini\gemini.set-due-date.js" />
+    <Content Include="js\content\gemini\gemini.gemini-appearance.js" />
+    <Content Include="js\content\gemini\gemini.copy-buttons.js" />
+    <Content Include="js\content\gemini\gemini.git-native.js" />
+    <Content Include="js\content\gemini\gemini.tiny-mce-override.js" />
+    <Content Include="js\content\svu\svu.controller-observer.js" />
+    <Content Include="js\content\svu\svu.base.js" />
+    <Content Include="js\content\svu\svu.url-observer.js" />
+    <Content Include="js\content\gemini\gemini.common.js" />
+    <Content Include="js\content\gemini\gemini.branch-name-formula.js" />
+    <Content Include="js\content\gemini\gemini.asignee-list.js" />
+    <Content Include="options\js\em\options\app.js" />
+    <Content Include="options\js\em\options\components\base-controller.js" />
+    <Content Include="options\js\em\options\components\base-field-group-component.js" />
+    <Content Include="options\js\em\options\components\radio-field-component.js" />
+    <Content Include="options\js\em\options\controllers\about.js" />
+    <Content Include="options\js\em\options\controllers\advance-controller.js" />
+    <Content Include="options\js\em\options\controllers\general-controller.js" />
+    <Content Include="options\js\em\options\controllers\lorem-generator-controller.js" />
+    <Content Include="options\js\em\options\is-active-helper.js" />
+    <Content Include="options\js\em\options\lorem.js" />
+    <Content Include="options\js\em\options\options-ember.js" />
+    <Content Include="options\js\em\options\routes.js" />
+    <Content Include="options\js\em\options\routes\general-route.js" />
+    <Content Include="options\js\em\options\routes\index-route.js" />
+    <Content Include="options\js\em\options\utils.js" />
+    <Content Include="options\js\em\utilities\lorem.js" />
+    <Content Include="options\js\em\utilities\controllers\lorem-generator-controller.js" />
+    <Content Include="options\js\em\utilities\routes\lorem-generator-route.js" />
+    <Content Include="options\js\em\utilities\utils.js" />
+    <Content Include="options\js\em\utilities\app.js" />
+    <Content Include="options\js\em\utilities\components\base-controller.js" />
+    <Content Include="options\js\em\utilities\components\base-field-group-component.js" />
+    <Content Include="options\js\em\utilities\components\radio-field-component.js" />
+    <Content Include="options\js\em\utilities\controllers\about.js" />
+    <Content Include="options\js\em\utilities\controllers\advance-controller.js" />
+    <Content Include="options\js\em\utilities\controllers\general-controller.js" />
+    <Content Include="options\js\em\utilities\is-active-helper.js" />
+    <Content Include="options\js\em\utilities\routes\index-route.js" />
+    <Content Include="options\js\em\utilities\routes\general-route.js" />
+    <None Include="options\js\em\options\templates\about.hbs" />
+    <None Include="options\js\em\options\templates\application.hbs" />
+    <None Include="options\js\em\options\templates\components\bootstrap-dropdown-list.hbs" />
+    <None Include="options\js\em\options\templates\components\radio-field-group.hbs" />
+    <None Include="options\js\em\options\templates\components\radio-field.hbs" />
+    <None Include="options\js\em\options\templates\components\setting-item.hbs" />
+    <None Include="options\js\em\options\templates\advanced.hbs" />
+    <None Include="options\js\em\options\templates\general.hbs" />
+    <None Include="options\js\em\utilities\templates\application.hbs" />
+    <None Include="options\js\em\utilities\templates\about.hbs" />
+    <None Include="options\js\em\utilities\templates\components\setting-item.hbs" />
+    <None Include="options\js\em\utilities\templates\lorem-generator.hbs" />
+    <None Include="options\js\em\utilities\templates\general.hbs" />
+    <Content Include="options\js\em\utilities\utilities-ember.js" />
+    <Content Include="options\js\em\utilities\routes.js" />
+    <Content Include="options\js\em\utilities\template-collector.js" />
+    <Content Include="popup\js\index.js" />
+    <Content Include="lib\clipboard\clipboard.min.js" />
+    <Content Include="lib\jquery.hotkeys\jquery.hotkeys.js" />
+    <Content Include="lib\jquery.mousewheel\jquery.mousewheel.js" />
+    <Content Include="lib\moment\moment.js" />
+    <Content Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="manifest.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app-data\" />
+    <Folder Include="lib\animejs\" />
+    <Folder Include="lib\fontawesome\fonts\" />
+    <Folder Include="lib\handlebars\" />
+    <Folder Include="lib\jquery-ui\" />
+    <Folder Include="lib\jquery\" />
+    <Folder Include="options\js\em\common\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

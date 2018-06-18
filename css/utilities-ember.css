@@ -1,0 +1,39 @@
+.bd-footer {
+  text-align: left;
+}
+.bd-footer {
+  padding: 4rem 0;
+  margin-top: 4rem;
+  font-size: 85%;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+.text-muted {
+  color: #636c72!important;
+}
+.bd-footer-links {
+  padding-left: 0;
+  margin-bottom: 1rem;
+}
+
+.bd-footer-links li {
+  display: inline-block;
+}
+
+.bd-footer p {
+  margin-bottom: 0;
+}
+
+.bd-footer a:hover {
+  color: #0275d8;
+}
+
+.bd-footer a {
+  font-weight: 500;
+  color: #464a4c;
+}
+
+.my-slider-container .slider {
+  width: 100%
+}

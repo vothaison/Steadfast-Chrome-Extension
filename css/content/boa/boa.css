@@ -1,0 +1,74 @@
+.sf_controller_observer {
+  position: fixed;
+  width: 250px;
+  bottom: 0;
+  padding-bottom: 20px;
+  background: gray;
+  box-shadow: 1px 0px 23px #7d967d;
+  z-index: 10000;
+}
+
+.sf_controller_observer_input.tt-hint,
+.sf_controller_observer_input.tt-input {
+  width: calc(100% - 5px);
+  padding-left: 3px;
+}
+
+.sf_controller_observer_button_go,
+.sf_controller_observer_button_reset {
+  position: absolute
+}
+
+.sf_controller_observer_button_go {
+  box-shadow: 1px 0px 23px #7d967d;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.sf_controller_observer_button_reset {
+  right: 7px;
+  background: transparent;
+  border: none;
+  z-index: 10;
+  padding-top: 3px;
+}
+
+.sf_controller_observer_button_reset:hover {
+  color: lightgray;
+}
+
+.sf_controller_observer_menu {
+  bottom: 100% !important;
+  max-height: 500px;
+  top: initial !important;
+}
+
+.boa-form__footer {
+  position: fixed;
+  bottom: 0;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+/* narrow and right sidebar*/
+.boa-page .boa-form__footer {
+  left: 310px;
+  width: calc(100% - 590px);
+}
+
+/* narrow and NO right sidebar*/
+.boa-page > div:last-child .boa-form__footer {
+  left: 310px;
+  width: calc(100% - 370px);
+}
+
+/* NO narrow and right sidebar*/
+.boa-page.boa-page--narrow .boa-form__footer {
+  left: 130px;
+  width: calc(100% - 410px);
+}
+
+/* NO narrow and NO right sidebar*/
+.boa-page.boa-page--narrow > div:last-child .boa-form__footer {
+  left: 130px;
+  width: calc(100% - 190px);
+}

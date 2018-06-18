@@ -1,0 +1,29 @@
+<nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">Utilities</a>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Click here</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          {{#link-to 'lorem-generator' class="dropdown-item"}} Lorem Generator {{/link-to}}
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container level-one-app" style="margin-top:70px">
+  {{outlet "main"}}
+</div>
+
+<footer class="bd-footer text-muted">
+  <div class="container">
+    <ul class="bd-footer-links">
+      
+    </ul>
+  </div>
+</footer>

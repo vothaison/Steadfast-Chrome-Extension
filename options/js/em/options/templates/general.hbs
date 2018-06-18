@@ -1,0 +1,116 @@
+<div class="card">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+
+      <label class="custom-control custom-checkbox">
+        {{input type="checkbox" class="custom-control-input"  name="enableAll" checked=enableAll id="enableAll"}}
+        <span class="custom-control-indicator"></span>
+        <span class="custom-control-description"><b>Enable All</b></span>
+      </label>
+
+    </li>
+    <li class="list-group-item">
+      <h2 class="h3">Gemini Settings</h2>
+      <div class="card" style="display: block;width: 100%;">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            {{setting-item name='changeGeminiAppearance' value=changeGeminiAppearance label='Change Gemini Appearance' description='Make text bigger' imagePath='../images/option-page/changeGeminiAppearance.jpg' inlineStyle='width: 100%'}}
+
+          </li>
+          <li class="list-group-item">
+            {{setting-item name='changeMceEditor' value=changeMceEditor label='Change the appearances for editors' description='Make text in the editor bigger. Introduce a Fullscreen button. And more' imagePath='../images/option-page/changeMceEditor.jpg' inlineStyle='width: 100%'}}
+            <div style="width: 30px">&nbsp;</div>
+            <div class="gx-sub-section" style="width: 100%">
+              <div class="gx-sub-section__item">
+                <label for="boaSolutionUrl">Font size</label>
+                {{log 'hbs editorFontSize' editorFontSize}}
+                {{bootstrap-dropdown-list fieldValue=editorFontSize disabled=editorFontSizeDisabled }}
+              </div>
+            </div>
+
+          </li>
+          <li class="list-group-item">
+            {{setting-item name='copyTextFromTitle' value=copyTextFromTitle label='Copy Text from Gemini Ticket Name' description='Copy a proper git branch name or a nice string to paste into Skype. And more ' imagePath='../images/option-page/copyTextFromTitle.jpg' inlineStyle='width: 100%'}}
+            <div style="width: 35%">&nbsp;</div>
+            <div style="width: 30px">&nbsp;</div>
+            <br />
+            {{setting-item name='copyGitBranchName' value=copyGitBranchName label='Copy Git Branch Name' description=''}}
+            {{setting-item name='copyTitleAndUrl' value=copyTitleAndUrl label='Copy Title and URL' description='' }}
+
+          </li>
+          <li class="list-group-item">
+            {{setting-item name='refreshGemeniPageUponReloadExtension' value=refreshGemeniPageUponReloadExtension label='Refresh Gemini Pages upon reloading Extension' description='Just for the new features of the Extension to take effect ' imagePath='../images/option-page/refreshGemeniPageUponReloadExtension.jpg' inlineStyle='width: 100%'}}
+          </li>
+
+          <li class="list-group-item">
+            {{setting-item name='setDueDateBySprint' value=setDueDateBySprint label='Automatically set Due Date equal to Sprint Date' description='This is for when you create a new item' imagePath='../images/option-page/setDueDateBySprint.jpg' inlineStyle='width: 100%'}}
+          </li>
+
+          <li class="list-group-item">
+            {{setting-item name='makeLeftZoneSlider' value=makeLeftZoneSlider label='Fixed position for left-zone panel' description='Left zone panel will stay visible when you scroll the page up or down' imagePath='../images/option-page/makeLeftZoneSlider.jpg' inlineStyle='width: 100%'}}
+          </li>
+
+          <li class="list-group-item">
+            {{setting-item name='showQuickAssign' value=showQuickAssign label='Show Quick Assign' description='A small panel on the left - another way to change resource (assign task).' imagePath='../images/option-page/showQuickAssign.jpg' inlineStyle='width: 100%'}}
+          </li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="list-group-item">
+      <h2 class="h3">SVU Project Settings</h2>
+      <div class="card" style="display: block;width: 100%;">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            {{setting-item name='enableSneakyToolSVU' value=enableSneakyToolSVU label='Enable Sneaky Tool' description='Allow you to take a quick look at a property on current SVU page.' imagePath='../images/option-page/enableSneakyTool.png' inlineStyle='width: 100%'}}
+          </li>
+
+        </ul>
+      </div>
+    </li>
+
+    <li class="list-group-item">
+      <h2 class="h3">Atlasian</h2>
+      <div class="card" style="display: block;width: 100%;">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            {{setting-item name='atlCopyGitName' value=atlCopyGitName label='Copy Git Branch Name' description='' imagePath='../images/option-page/_.png' inlineStyle='width: 100%'}}
+          </li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="list-group-item">
+      <h2 class="h3">BitBucket</h2>
+      <div class="card" style="display: block;width: 100%;">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            {{setting-item name='bitLocateFiles' value=bitLocateFiles label='Locate Files' description='Locate BOA source file' imagePath='../images/option-page/_.png' inlineStyle='width: 100%'}}
+          </li>
+
+          <li class="list-group-item">
+            {{setting-item name='bitShowGitLog' value=bitShowGitLog label='Show git log' description='Requires Tortoise GIT' imagePath='../images/option-page/_.png' inlineStyle='width: 100%'}}
+          </li>
+
+        </ul>
+      </div>
+    </li>
+
+    <li class="list-group-item">
+      <h2 class="h3">BOA Project Settings</h2>
+      <div class="card" style="display: block;width: 100%;">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            {{setting-item name='boaActionButtons' value=boaActionButtons label='Action Buttons' description='Help you with some basic tasks' imagePath='../images/option-page/_.png' inlineStyle='width: 100%'}}
+          </li>
+
+          <li class="list-group-item">
+            <label for="boaSolutionFolder">BOA solution folder</label>
+            {{input class="form-control" value=boaSolutionFolder}}
+          </li>
+
+        </ul>
+      </div>
+    </li>
+  </ul>
+</div>

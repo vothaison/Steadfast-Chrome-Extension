@@ -1,0 +1,9 @@
+<label class="custom-control custom-checkbox gx-single-option-title">
+  {{input type="checkbox" class="custom-control-input"  name=name checked=value id=name}}
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description"><b>{{label}}</b></span>
+  <span>{{description}}</span>
+  {{#if imagePath}}
+  <a href="#" title={{name}} imgurl={{imagePath}}>more</a>
+  {{/if}}
+</label>

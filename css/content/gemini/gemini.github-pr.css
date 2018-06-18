@@ -1,0 +1,24 @@
+﻿.geminiEX #view-item .attributes-pane .attribute-value>div {
+  font-size: 13px !important;
+  margin-left: 0 !important;
+  line-height: 1.6em;
+  display: inline-block;
+}
+
+.geminiEX #view-item .attributes-pane .attribute-value>div>div {
+  margin-left: 4px !important;
+  display: inline-block;
+}
+
+
+.geminiEX #view-item .attributes-pane .attribute-value>span {
+  font-size: 13px !important;
+  margin-left: 0 !important;
+  line-height: 1.6em;
+  display: inline-block;
+}
+
+.geminiEX #view-item .attributes-pane .attribute-value > span > span {
+  margin-left: 4px !important;
+  display: inline-block;
+}

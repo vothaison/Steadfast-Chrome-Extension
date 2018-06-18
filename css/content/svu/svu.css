@@ -1,0 +1,38 @@
+.sf_controller_observer {
+  position: fixed;
+  width: 300px;
+  bottom: 0;
+  padding-bottom: 20px;
+  background: gray;
+  box-shadow: 1px 0px 23px #7d967d;
+  z-index: 10000;
+}
+
+.sf_controller_observer_input.tt-hint,
+.sf_controller_observer_input.tt-input {
+  width: calc(100% - 5px);
+  padding-left: 3px;
+}
+
+.sf_controller_observer_button_go,
+.sf_controller_observer_button_reset {
+  position: absolute
+}
+
+.sf_controller_observer_button_reset {
+  right: 0px;
+  background: transparent;
+  border: none;
+  z-index: 10;
+  padding-top: 3px;
+}
+
+.sf_controller_observer_button_reset:hover {
+  color: lightgray;
+}
+
+.sf_controller_observer_menu {
+  bottom: 100% !important;
+  max-height: 500px;
+  top: initial !important;
+}

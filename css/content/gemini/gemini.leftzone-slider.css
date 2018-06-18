@@ -1,0 +1,24 @@
+﻿#view-item .left-zone {
+  position: fixed;
+  top: 50px;
+  transition: all .5s ease 0s;
+  overflow-y: scroll;
+  width: 210px;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  height: calc(100% - 100px);
+  display: flex;
+  flex-direction: column;
+}
+
+#view-item .right-zone {
+  margin-left: 220px;
+}
+
+#view-item .attributes-pane .attribute .title {
+  padding-left: 4px !important;
+}
+
+#view-item .attributes-pane {
+  margin-right: 0;
+}

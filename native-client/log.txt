@@ -1,0 +1,3 @@
+2018-06-18 15:58:24,408 [1] INFO VTS.ChromeNativeMessaging.Program - Started ChromeNativeMessaging. Build at: 18-Jun-18 3:44:48 PM
+2018-06-18 15:58:24,425 [1] INFO VTS.ChromeNativeMessaging.Program - OpenStandardStreamIn BEGIN
+2018-06-18 15:58:24,439 [1] INFO VTS.ChromeNativeMessaging.Program - OpenStandardStreamIn length = 1886216563

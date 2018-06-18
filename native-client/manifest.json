@@ -1,0 +1,1 @@
+{"name":"com.example.native","description":"Native support for Chrome Extension","path":"VTS.ChromeNativeMessaging.exe","type":"stdio","allowed_origins":["chrome-extension://nkccdlgofigbdibfckohjjgnpejgggme/"]}
